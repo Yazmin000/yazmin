@@ -2,19 +2,31 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Inicio - Cafetería Universitaria</title>
+    <title>Cafetería Universitaria</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; text-align: center; }
-        .btn { padding: 12px 20px; margin: 10px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; display: inline-block; font-size: 16px; }
-        .btn-green { background-color: #28a745; }
+        body { font-family: Arial, sans-serif; margin: 30px; }
+        .menu-container { margin-top: 20px; display: flex; gap: 15px; }
+        .btn-menu { 
+            padding: 12px 20px; 
+            background-color: #007bff; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-size: 16px;
+            display: inline-block;
+        }
+        .btn-menu:hover { background-color: #0056b3; }
     </style>
 </head>
 <body>
-    <h1>Cafetería Universitaria</h1>
-    <p>Selecciona una opción para consultar los registros:</p>
-    <div>
-        <a href="/productos" class="btn">Consultar Productos</a>
-        <a href="/pedidos" class="btn btn-green">Consultar Pedidos</a>
+
+    <h2>Cafetería Universitaria</h2>
+    <p>Selecciona una opción para consultar o gestionar la información:</p>
+
+    <div class="menu-container">
+        <a href="/pedidos" class="btn-menu">📋 Consultar Pedidos</a>
+        <a href="/productos" class="btn-menu">🍔 Consultar Productos</a>
     </div>
+
 </body>
 </html>
